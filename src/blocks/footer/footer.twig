@@ -1,0 +1,78 @@
+{# index.twig #}
+
+{% block footer %}
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top-box">
+        <!-- klk -->
+        <div class="footer__columns">
+          <h3 class="footer__columns-title">
+            Покупателям
+          </h3>
+          <a href="#" class="footer__columns-link">Наша почта</a>
+          <a href="#" class="footer__columns-link">Авторам</a>
+          <a href="#" class="footer__columns-link">Вакансии</a>
+          <a href="#" class="footer__columns-link">Контакты</a>
+        </div>
+        <!-- llk -->
+        <div class="footer__columns">
+          <h3 class="footer__columns-title">
+            Издательство
+          </h3>
+          <a href="#" class="footer__columns-link">О компании</a>
+          <a href="#" class="footer__columns-link">Авторам</a>
+          <a href="#" class="footer__columns-link">Вакансии</a>
+          <a href="#" class="footer__columns-link">Контакты</a>
+        </div>
+        <!-- llk -->
+
+        <div class="footer__columns">
+          <h3 class="footer__columns-title">
+            Книги
+          </h3>
+          <a href="#" class="footer__columns-link">Все категории</a>
+          <a href="#" class="footer__columns-link">Бестселлеры</a>
+          <a href="#" class="footer__columns-link">Новинки</a>
+          <a href="#" class="footer__columns-link">Скидки и акции</a>
+        </div>
+        <!-- llk -->
+
+        <div class="footer__columns">
+          <h3 class="footer__columns-title">
+            Прайс-лист
+          </h3>
+          <div class="footer__columns-download">
+            <a href="#" class="footer__columns-link">
+              {% include '/assets/svg/file.svg' %}Скачать прайс-лист
+            </a>
+            <span>PDF, 12 Mb</span>
+          </div>
+        </div>
+        <!-- llk -->
+
+        <div class="footer__columns">
+          <h3 class="footer__columns-title">
+            Телефон и Email
+          </h3>
+
+          <a href="#" class="footer__columns-link">
+            {% include '/assets/svg/icon3.svg' %}market@estatut.ru
+          </a>
+
+          <a href="#" class="footer__columns-link">
+            {% include '/assets/svg/icon4.svg' %}8 (968) 660-65-50
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__bottom-box">
+        <span>© 2020 Издательство «Статут»</span>
+        <a href="#" class="footer__link">
+          ул. Лобачевского, 92, корп. 2 119454, г. Москва
+        </a>
+        <a href="#" class="footer__link">Политика конфиденциальности</a>
+        <a href="#" class="footer__link">Договор оферты</a>
+      </div>
+    </div>
+  </footer>
+{% endblock %}

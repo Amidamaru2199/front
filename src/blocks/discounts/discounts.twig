@@ -1,0 +1,23 @@
+{% block discounts %}
+  <div class="discounts">
+    <div class="container">
+      <div class="discounts__container">
+        {% include '/assets/svg/logo.svg' %}
+
+        <form class="discounts__form" action="">
+          <input type="text"
+            class="discounts__field-form"
+            placeholder="Введите свой Email и получите скидку" />
+          <button type="submit" class="discounts__search-button-form">
+            {% include 'assets/svg/Shape.svg' %}
+          </button>
+        </form>
+        <div class="discounts__social-icons">
+          {% include '/assets/svg/Facebook.svg' %}
+          {% include '/assets/svg/instagram.svg' %}
+          {% include '/assets/svg/Twitter.svg' %}
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

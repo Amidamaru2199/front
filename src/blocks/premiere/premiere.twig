@@ -1,0 +1,149 @@
+{% block premiere %}
+  <section class="premiere">
+    <div class="premiere__container container">
+      <div class="premiere__top-box">
+        <h2 class="premiere__title">
+          Готовятся к выходу
+        </h2>
+        <div class="premiere__buttons">
+          <button class="premiere__left-button">
+            {% include '/assets/svg/left.svg' %}
+          </button>
+          <button class="premiere__right-button">
+            {% include '/assets/svg/right.svg' %}
+          </button>
+        </div>
+      </div>
+      <div class="premiere__cards">
+        <!-- uuuu -->
+
+        <div class="premiere__card">
+          <span class="premiere__card-status">Бестселлер</span>
+          <span class="premiere__card-stock">1+1=3</span>
+
+          <img class="premiere__card-img" src="img/image1.png" />
+          <a class="premiere__card-link">Корпоративное право</a>
+          <p class="premiere__card-description">
+            Инвестирование: способы, риски, субъекты : монография
+          </p>
+          <p class="premiere__card-autрor">
+            Майфат А.В.
+          </p>
+          <p class="premiere__card-price">
+            4 450 ₽
+          </p>
+          <div class="premiere__card-rating">
+            {% include '/assets/svg/star.svg' %}
+            <span>4.9</span>
+          </div>
+          <div class="premiere__card-recommendations">
+            {% include '/assets/svg/like.svg' %}
+            <span>89% рекомендуют</span>
+          </div>
+
+          <button class="premiere__card-basket-button">
+            {% include '/assets/svg/basket.svg' %}В корзину
+          </button>
+          <button class="premiere__card-saved-button">
+            {% include '/assets/svg/saved.svg' %}
+          </button>
+        </div>
+        <!-- uuuu -->
+        <div class="premiere__card">
+          <span class="premiere__card-status novelties__card-status_new">
+            Новинка
+          </span>
+
+          <img class="premiere__card-img" src="img/image2.png" />
+          <a class="premiere__card-link">Договорное право</a>
+          <p class="premiere__card-description">
+            Договор коммерческой концессии (франчайзинг). Граж...
+          </p>
+          <p class="premiere__card-autрor">
+            Майфат А.В.
+          </p>
+          <p class="premiere__card-price">
+            372 ₽
+          </p>
+          <div class="premiere__card-rating">
+            {% include '/assets/svg/star.svg' %}
+            <span>4.9</span>
+          </div>
+          <div class="premiere__card-recommendations">
+            {% include '/assets/svg/like.svg' %}
+            <span>89% рекомендуют</span>
+          </div>
+          <button class="premiere__card-basket-button">
+            {% include '/assets/svg/basket.svg' %}В корзину
+          </button>
+          <button class="premiere__card-saved-button">
+            {% include '/assets/svg/saved.svg' %}
+          </button>
+        </div>
+        <!-- uuuu -->
+        <div class="premiere__card">
+          <img class="premiere__card-img" src="img/image3.png" />
+          <a class="premiere__card-link">Корпоративное право</a>
+          <p class="premiere__card-description">
+            Инвестирование: способы, риски, субъекты : монография
+          </p>
+          <p class="premiere__card-autрor">
+            Майфат А.В.
+          </p>
+          <p class="premiere__card-price">
+            4 450 ₽<del>
+              1 284 ₽
+            </del>
+            <span>Выгода 300 ₽</span>
+          </p>
+          <div class="premiere__card-rating">
+            {% include '/assets/svg/star.svg' %}
+            <span>4.9</span>
+          </div>
+          <div class="premiere__card-recommendations">
+            {% include '/assets/svg/like.svg' %}
+            <span>89% рекомендуют</span>
+          </div>
+          <button class="premiere__card-basket-button">
+            {% include '/assets/svg/basket.svg' %}В корзину
+          </button>
+          <button class="premiere__card-saved-button">
+            {% include '/assets/svg/saved.svg' %}
+          </button>
+        </div>
+        <!-- uuuu -->
+        <div class="premiere__card">
+          <span class="premiere__card-status">Бестселлер</span>
+          <span class="premiere__card-stock">1+1=3</span>
+          <img class="premiere__card-img" src="img/image1.png" />
+          <a class="premiere__card-link">Корпоративное право</a>
+          <p class="premiere__card-description">
+            Инвестирование: способы, риски, субъекты : монография
+          </p>
+          <p class="premiere__card-autрor">
+            Майфат А.В.
+          </p>
+          <p class="premiere__card-price">
+            4 450 ₽
+          </p>
+          <div class="premiere__card-rating">
+            {% include '/assets/svg/star.svg' %}
+            <span>4.9</span>
+          </div>
+          <div class="premiere__card-recommendations">
+            {% include '/assets/svg/like.svg' %}
+            <span>89% рекомендуют</span>
+          </div>
+          <button class="premiere__card-basket-button">
+            {% include '/assets/svg/basket.svg' %}В корзину
+          </button>
+          <button class="premiere__card-saved-button">
+            {% include '/assets/svg/saved.svg' %}
+          </button>
+        </div>
+        <!-- uuuu -->
+      </div>
+      <button class="ooo">Показать все книги раздела</button>
+    </div>
+  </section>
+{% endblock %}

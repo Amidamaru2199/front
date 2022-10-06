@@ -1,0 +1,101 @@
+{% block header %}
+  <header>
+    <div class="container">
+      <div class="header__top-box">
+        <div class="header__links">
+          <div class="header__link-container">
+            {% include '/assets/svg/icon.svg' %}
+            <a href="#" class="header__link">Москва</a>
+          </div>
+
+          <div class="header__link-container">
+            {% include '/assets/svg/icon1.svg' %}
+            <a href="#" class="header__link">Доставка и оплата</a>
+          </div>
+
+          <div class="header__link-container">
+            {% include '/assets/svg/icon2.svg' %}
+            <a href="#" class="header__link">Адрес и часы работы</a>
+          </div>
+        </div>
+        <div class="header__contaсts">
+          <div class="header__contact-container">
+            {% include '/assets/svg/icon3.svg' %}
+            <a href="https://канцпарк.рф/" class="header__email">
+              market@estatut.ru
+            </a>
+          </div>
+          <div class="header__contact-container">
+            {% include '/assets/svg/icon4.svg' %}
+
+            <a href="https://канцпарк.рф/" class="header__telefon">
+              8 (968) 660-65-50
+            </a>
+            {% include '/assets/svg/icon5.svg' %}
+          </div>
+        </div>
+      </div>
+
+      <div class="header__medium-box">
+        <div class="header__input-container">
+          <a class="header__logo">{% include '/assets/svg/logo.svg' %}</a>
+          <form class="header__form" action="">
+            <input type="text"
+              class="header__field-form"
+              placeholder="Автор, название, ISBN" />
+            <button type="submit" class="header__search-button-form">
+              {% include '/assets/svg/lupa.svg' %}Искать
+            </button>
+          </form>
+        </div>
+        <div class="header__menu">
+          <div class="header__menu-box">
+            {% include '/assets/svg/saved.svg' %}
+            <a class="header__box-link">Отложено</a>
+          </div>
+          <div class="header__menu-box">
+            {% include '/assets/svg/roja.svg' %}
+            <a class="header__box-link">Войти</a>
+          </div>
+          <div class="header__menu-box">
+            <p class="apsolute">
+              10
+            </p>
+            {% include '/assets/svg/korsina.svg' %}
+            <a class="header__box-link">Корзина</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="header__catalog">
+        <div class="header__catalog-box">
+          {% include '/assets/svg/katalog.svg' %}
+          <a class="header__catalog-link header__calog-link-icon">Каталог</a>
+        </div>
+
+        <div class="header__catalog-box">
+          <a class="header__catalog-link">Авторы</a>
+        </div>
+
+        <div class="header__catalog-box">
+          <a class="header__catalog-link">Новинки</a>
+        </div>
+
+        <div class="header__catalog-box">
+          {% include '/assets/svg/red.svg' %}
+          <a class="header__catalog-link header__catalog-link_red header__calog-link-icon">
+            Скидки
+          </a>
+        </div>
+
+        <div class="header__catalog-box">
+          <a class="header__catalog-link">Партнёрам</a>
+        </div>
+
+        <div class="header__catalog-box">
+          <a class="header__catalog-link">Мы</a>
+        </div>
+      </div>
+    </div>
+  </header>
+{% endblock %}

@@ -1,0 +1,67 @@
+.discounts {
+  background: #282f360a;
+  padding: 30px 0;
+}
+
+.discounts__text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.discounts__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.discounts__form {
+  display: flex;
+  margin-left: 112px;
+}
+
+.discounts__field-form {
+  height: 40px;
+  width: 392px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(28, 41, 77, 0.5);
+  outline: 0;
+  padding: 0;
+  padding-left: 16px;
+  box-sizing: border-box;
+  background: #ffffff;
+  border-radius: 5px 0 0 5px;
+  border: 1px solid #282f3626;
+  border-right: 0;
+  margin-right: 0;
+}
+
+.discounts__search-button-form {
+  width: 50px;
+  height: 40px;
+  background: #ff5c00;
+  border: 1px solid #ff5c00;
+  border-radius: 0 5px 5px 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 0 0px;
+}
+
+.discounts__social-icons {
+  svg {
+    margin-left: 11px;
+  }
+}
