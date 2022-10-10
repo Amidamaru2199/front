@@ -1,6 +1,14 @@
 .register {
   background: #f9f9fa;
-  padding: 30px 0;
+  padding: 30px 40px;
+
+  @media screen and (max-width: 767px) {
+    padding: 30px 20px;
+  }
+
+  @media screen and (max-width: 696px) {
+    padding: 10px 10px;
+  }
 }
 
 .register__container {
@@ -10,6 +18,15 @@
   background: #0288d1;
   border-radius: 5px;
   padding: 0 45px;
+  max-width: 1140px;
+  margin: 0 auto;
+
+  @media screen and (max-width: 696px) {
+    flex-direction: column;
+    height: 190px;
+    padding: 20px 10px;
+    align-items: flex-start;
+  }
 }
 
 .register__text {
@@ -19,16 +36,40 @@
   line-height: 20px;
   color: #ffffff;
   margin: 0;
+  position: relative;
+  z-index: 1;
+
+  svg {
+    left: 56px;
+    top: -4px;
+    position: absolute;
+    z-index: -1;
+  }
+
+  @media screen and (max-width: 696px) {
+    line-height: 24px;
+    width: 100%;
+  }
 }
 
 .register__form {
   display: flex;
   margin-left: 14px;
+  max-width: 565px;
+  width: 100%;
+
+  @media screen and (max-width: 696px) {
+    flex-direction: column;
+    margin-left: 0;
+    max-width: 100%;
+  }
 }
 
 .register__field-form {
   height: 40px;
-  width: 418px;
+  display: block;
+  max-width: 418px;
+  width: 100%;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -41,6 +82,11 @@
   border-radius: 5px;
   border: 0;
   margin-right: 10px;
+
+  @media screen and (max-width: 696px) {
+    max-width: 100%;
+    margin: 10px 0;
+  }
 }
 
 .register__search-button-form {
@@ -59,4 +105,8 @@
   justify-content: center;
   box-sizing: border-box;
   padding: 0 25px;
+
+  @media screen and (max-width: 696px) {
+    width: 100%;
+  }
 }

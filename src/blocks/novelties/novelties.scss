@@ -2,6 +2,12 @@
   background: #f9f9fa;
 }
 
+.novelties__container {
+  @media screen and (max-width: 375px) {
+    padding: 0 10px;
+  }
+}
+
 .novelties__top-box {
   height: 61px;
   display: flex;
@@ -12,6 +18,10 @@
   border-bottom: 1px solid #1c294d26;
   box-sizing: border-box;
   padding: 0 25px;
+
+  @media screen and (max-width: 375px) {
+    padding: 0 10px;
+  }
 }
 
 .novelties__title {
@@ -21,6 +31,7 @@
   line-height: 25px;
   color: #1c294d;
   margin: 0;
+  letter-spacing: -0.5px;
 }
 
 .novelties__buttons {
@@ -43,25 +54,46 @@
 }
 
 .novelties__cards {
-  display: flex;
+  /*display: flex;
+  justify-content: center;
+  flex-wrap: wrap;*/
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 285px /*minmax(270px, 400px)*/);
   justify-content: center;
 
-  flex-wrap: wrap;
+  @media screen and (max-width: 610px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .novelties__card {
-  height: 460px;
   max-width: 285px;
   background: #ffffff;
   box-sizing: border-box;
-  padding: 0 20px;
+  padding: 0 20px 22px;
   font-size: 0;
   position: relative;
   border-right: 1px solid #1c294d26;
-}
+  border-top: 1px solid #1c294d26;
 
-.novelties__card:last-of-type {
-  border-right: 0;
+  &:last-of-type {
+    border-right: 0;
+  }
+
+  @media screen and (max-width: 536px) {
+    min-width: 178px;
+    background: #ffffff;
+    box-sizing: border-box;
+    padding: 0 10px 17px;
+    font-size: 0;
+    position: relative;
+    &:nth-of-type(2) {
+      display: none;
+    }
+    &:nth-of-type(3) {
+      display: none;
+    }
+  }
 }
 
 .novelties__card-status {
@@ -79,6 +111,10 @@
   position: absolute;
   top: 11px;
   left: 32px;
+
+  @media screen and (max-width: 575px) {
+    left: 10px;
+  }
 }
 
 .novelties__card-status_new {
@@ -101,6 +137,10 @@
   position: absolute;
   top: 55px;
   left: 32px;
+
+  @media screen and (max-width: 575px) {
+    left: 10px;
+  }
 }
 
 .novelties__card-link {
@@ -130,7 +170,7 @@
   letter-spacing: -0.1px;
   color: #1c294d;
   margin: 0;
-  margin-top: 8px;
+  margin-top: 11px;
 }
 
 .novelties__card-price {
@@ -152,6 +192,7 @@
     position: relative;
     margin-left: 7px;
   }
+
   del:before {
     content: '';
     border-bottom: 1px solid red;
@@ -201,6 +242,7 @@
   justify-content: center;
   align-items: center;
   background-color: #ebedf7;
+  margin-top: 8px;
 
   span {
     margin: 0;
@@ -230,6 +272,13 @@
   box-sizing: border-box;
   padding: 0 26px;
   margin: 12px 10px 0 0;
+
+  @media screen and (max-width: 536px) {
+    width: 117px;
+    height: 35px;
+    margin-right: 4px;
+    padding: 0 14px;
+  }
 }
 
 .novelties__card-saved-button {
@@ -241,14 +290,28 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
+
+  @media screen and (max-width: 536px) {
+    width: 35px;
+    height: 35px;
+  }
 }
 
 .novelties__card-img {
   display: block;
-  margin: 15px auto 14px;
+  margin: 26px auto 14px;
+
+  @media screen and (max-width: 575px) {
+    height: 180px;
+    margin-bottom: 19px;
+  }
+
+  @media screen and (max-width: 375px) {
+    width: 126px;
+  }
 }
 
-.ooo {
+.novelties__bottom-box {
   height: 41px;
   width: 100%;
   border: 0;
@@ -259,4 +322,5 @@
   font-size: 14px;
   line-height: 20px;
   color: #1c294d;
+  border-radius: 0 0 5px 5px;
 }

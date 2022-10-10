@@ -3,9 +3,44 @@
     <div class="proposal__container container">
       <div class="proposal__slider-container">
         <div class="proposal__slider">
-          {% include '/assets/svg/2=3.svg' %}
-          {% include '/assets/svg/allbook.svg' %}
+          <button class="proposal__slider-button">{% include '/assets/svg/right1.svg' %}</button>
+            <div class="proposal__slider-svg">
+              {% include '/assets/svg/2=3.svg' %}
+              {% include '/assets/svg/allbook.svg' %}
+               <ul class="proposal__slid">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+            </div>
+          <button class="proposal__slider-button">{% include '/assets/svg/oooo.svg' %}</button>
+         
+         <div class="proposal__slider-svg-mobile">
+              {% include '/assets/svg/2=3min.svg' %}
+              {% include '/assets/svg/knigimin.svg' %}
+         </div>
         </div>
+{##}
+        <div class=" proposal__card-mobile">
+      <div class="proposal__card-heading">
+      <h1 class="propsal__card-title">Книга дня</h1>
+      <span class="proposal__card-time">08:56:31</span>
+      </div>
+      <img class="proposal__card-img" src="img/kartochka.png">
+      <a class="proposal__card-link">Корпоративное право</a>
+      <p class="proposal__card-description">Инвестирование: способы, риски, субъекты : монография</p>
+      <p class="proposal__card-autрor">Майфат А.В.</p>
+      <p class="proposal__card-price">4 450 ₽ </p>
+      <button class="proposal__card-basket-button">
+        {% include '/assets/svg/basket.svg' %}
+      В корзину
+      </button>
+      <button class="proposal__card-saved-button">
+              {% include '/assets/svg/saved.svg' %}
+      </button>
+      </div>
+      {# #}
         <div class="proposal__banners">
           <div class="proposal__banner">
             <p class="proposal__banner-text">

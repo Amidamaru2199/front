@@ -1,19 +1,18 @@
 {% block register %}
   <div class="register">
-    <div class="container">
-      <div class="register__container">
-        <p class="register__text">
-          Скидка 200 ₽ при подписке на рассылку Издательства
-        </p>
-        <form class="register__form" action="">
-          <input type="text"
-            class="register__field-form"
-            placeholder="Введите ваш Email" />
-          <button type="submit" class="register__search-button-form">
-            Подписаться
-          </button>
-        </form>
-      </div>
+    <div class="register__container">
+      <p class="register__text">
+        {% include '/assets/svg/jaltajmin.svg' %}Скидка 200 ₽ при подписке на
+        рассылку Издательства
+      </p>
+      <form class="register__form" action="">
+        <input type="text"
+          class="register__field-form"
+          placeholder="Введите ваш Email" />
+        <button type="submit" class="register__search-button-form">
+          Подписаться
+        </button>
+      </form>
     </div>
   </div>
 {% endblock %}
