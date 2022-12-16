@@ -1,83 +1,66 @@
 {% block proposal %}
-  <div class="proposal">
-    <div class="proposal__container container">
-      <div class="proposal__slider-container">
-        <div class="proposal__slider">
-          <button class="proposal__slider-button">{% include '/assets/svg/right1.svg' %}</button>
-            <div class="proposal__slider-svg">
-              {% include '/assets/svg/2=3.svg' %}
-              {% include '/assets/svg/allbook.svg' %}
-               <ul class="proposal__slid">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-            </div>
-          <button class="proposal__slider-button">{% include '/assets/svg/oooo.svg' %}</button>
-         
-         <div class="proposal__slider-svg-mobile">
-              {% include '/assets/svg/2=3min.svg' %}
-              {% include '/assets/svg/knigimin.svg' %}
-         </div>
-        </div>
-{##}
-        <div class=" proposal__card-mobile">
-      <div class="proposal__card-heading">
-      <h1 class="propsal__card-title">Книга дня</h1>
-      <span class="proposal__card-time">08:56:31</span>
-      </div>
-      <img alt="картинка"  class="proposal__card-img" src="img/kartochka.png">
-      <a class="proposal__card-link">Корпоративное право</a>
-      <p class="proposal__card-description">Инвестирование: способы, риски, субъекты : монография</p>
-      <p class="proposal__card-autрor">Майфат А.В.</p>
-      <p class="proposal__card-price">4 450 ₽ </p>
-      <button class="proposal__card-basket-button">
-        {% include '/assets/svg/basket.svg' %}
-      В корзину
-      </button>
-      <button class="proposal__card-saved-button">
-              {% include '/assets/svg/saved.svg' %}
-      </button>
-      </div>
-      {# #}
-        <div class="proposal__banners">
-          <div class="proposal__banner">
-            <p class="proposal__banner-text">
-                        {% include '/assets/svg/jeltaja.svg' %}
+	<div class="proposal">
+		<div class="proposal__container container">
+			<div class="proposal__slider-container">
+				<div class="proposal__slider">
+					<button class="button-prev proposal__slider-button">{% include '/assets/svg/right1.svg' %}</button>
 
-              Бесплатно доставим</br> ваш заказ при</br> покупке от 2000 ₽
-            </p>
-            {% include '/assets/svg/helovek.svg' %}
-          </div>
-          <div class="proposal__banner">
-            <p class="proposal__banner-text proposal__banner-text_black">
-                        {% include '/assets/svg/zelenaj.svg' %}
+					<div class="slider-wrapper">
+						<div class="slider-line">
+							<img src="img/slid.png" class=""/>
+							<img src="img/sli.png" class=""/>
+							<img src="img/slid.png" class=""/>
+							<img src="img/sli.png" class=""/>
+						</div>
+					</div>
 
-              Скидка</br> при регистрации </br>до 15%
-            </p>
-            {% include '/assets/svg/helovek2.svg' %}
-          </div>
-        </div>
-      </div>
-      <div class="proposal__card">
-      <div class="proposal__card-heading">
-      <h1 class="propsal__card-title">Книга дня</h1>
-      <span class="proposal__card-time">08:56:31</span>
-      </div>
-      <img alt="картинка" class="proposal__card-img" src="img/kartochka.png">
-      <a class="proposal__card-link">Корпоративное право</a>
-      <p class="proposal__card-description">Инвестирование: способы, риски, субъекты : монография</p>
-      <p class="proposal__card-autрor">Майфат А.В.</p>
-      <p class="proposal__card-price">4 450 ₽ </p>
-      <button class="proposal__card-basket-button">
-        {% include '/assets/svg/basket.svg' %}
-      В корзину
-      </button>
-      <button class="proposal__card-saved-button">
-              {% include '/assets/svg/saved.svg' %}
-      </button>
-      </div>
-    </div>
-  </div>
-{% endblock %}
+					<button class="button-next proposal__slider-button" onclick="o2.slider.nextSlide()">{% include '/assets/svg/oooo.svg' %}</button>
+
+					<div class="dots-wrapper">
+						<div class="dot active"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+					</div>
+				</div>
+				{##}
+				<div class=" proposal__card-mobile">
+					<div class="proposal__card-heading">
+						<h1 class="propsal__card-title">Книга дня</h1>
+						<span class="proposal__card-time">08:56:31</span>
+					</div>
+					<img alt="картинка" class="proposal__card-img" src="img/kartochka.png">
+					<a class="proposal__card-link">Корпоративное право</a>
+					<p class="proposal__card-description">Инвестирование: способы, риски, субъекты : монография</p>
+					<p class="proposal__card-autрor">Майфат А.В.</p>
+					<p class="proposal__card-price">4 450 ₽
+					</p>
+					<button class="proposal__card-basket-button">
+						{% include '/assets/svg/basket.svg' %}
+						В корзину
+					</button>
+					<button class="proposal__card-saved-button">
+						{% include '/assets/svg/saved.svg' %}
+					</button>
+				</div>
+				{# #}
+				<div class="proposal__banners">
+					<div class="proposal__banner">
+						<p class="proposal__banner-text">
+							{% include '/assets/svg/jeltaja.svg' %}Бесплатно доставим
+						</p>
+					</br>
+					ваш заказ при</br>
+				покупке от 2000 ₽
+			</p>
+			{% include '/assets/svg/helovek.svg' %}
+		</div>
+		<div class="proposal__banner">
+			<p class="proposal__banner-text proposal__banner-text_black">
+				{% include '/assets/svg/zelenaj.svg' %}Скидка
+			</p>
+		</br>
+		при регистрации
+	</br>до 15%
+</p>
+{% include '/assets/svg/helovek2.svg' %}</div></div></div><div class="proposal__card"><div class="proposal__card-heading"><h1 class="propsal__card-title">Книга дня</h1><span class="proposal__card-time">08:56:31</span></div><img alt="картинка" class="proposal__card-img" src="img/kartochka.png"><a class="proposal__card-link">Корпоративное право</a><p class="proposal__card-description">Инвестирование: способы, риски, субъекты : монография</p><p class="proposal__card-autрor">Майфат А.В.</p><p class="proposal__card-price">4 450 ₽</p><button class="proposal__card-basket-button">{% include '/assets/svg/basket.svg' %}В корзину</button><button class="proposal__card-saved-button">{% include '/assets/svg/saved.svg' %}</button></div></div></div>{% endblock %}
