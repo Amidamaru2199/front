@@ -1,167 +1,111 @@
 {% block header %}
-  <header>
-    <div class="header__top-box">
-      <div class="header__links">
-        <div class="header__link-container">
-          {% include '/assets/svg/icon.svg' %}
-          <a href="#" class="header__link header__link-popup">Москва</a>
-        </div>
+	<header>
+		<div class="header__top-box">
+			<div class="header__links">
+				<div class="header__link-container">
+					{% include '/assets/svg/icon.svg' %}
+					<a href="#" onclick="o2.gPopup.open('_popup')" class="header__link header__link-popup">Москва</a>
+				</div>
 
-        <div class="header__popup is-open">
-          <button class="header__popup-close">
-            {% include '/assets/svg/krest.svg' %}
-          </button>
-          <h2 class="header__popup-title">
-            {% include '/assets/svg/mesto.svg' %}Ваш населённый пункт
-          </h2>
-          <p class="header__popup-subtitle">
-            Поиск населенного пункта
-          </p>
-          <form class="header__popup-form" action="">
-            <input type="text"
-              class="header__popup-field"
-              placeholder="Откуда вы?" />
-            <button type="submit" class="header__popup-button">
-              {% include '/assets/svg/popuplupa.svg' %}
-            </button>
-          </form>
-          <div class="header__popup-links">
-            <ul>
-              <li>Москва</li>
-              <li>Санкт-Петербург</li>
-              <li>Новосибирск</li>
-              <li>Екатеринбург</li>
-              <li>Екатеринбург</li>
-              <li>Казань</li>
-              <li>Челябинск</li>
-              <li>Омск</li>
-              <li>Самара</li>
-              <li>Ростов-на-Дону</li>
-              <li>Уфа</li>
-              <li>Саратов</li>
-              <li>Тверь</li>
-            </ul>
+				<div class="header__link-container">
+					{% include '/assets/svg/icon1.svg' %}
+					<a href="#" class="header__link">Доставка и оплата</a>
+				</div>
 
-            <ul>
-              <li>Краснодар</li>
-              <li>Красноярск</li>
-              <li>Архангельск</li>
-              <li>Мурманск</li>
-              <li>Владивосток</li>
-              <li>Самара</li>
-              <li>Сочи</li>
-              <li>Пермь</li>
-              <li>Тольятти</li>
-              <li>Ижевск</li>
-              <li>Тула</li>
-              <li>Тюмень</li>
-              <li>Хабаровск</li>
-            </ul>
-          </div>
-        </div>
+				<div class="header__link-container">
+					{% include '/assets/svg/icon2.svg' %}
+					<a href="#" class="header__link">Адрес и часы работы</a>
+				</div>
+			</div>
+			<div class="header__contaсts">
+				<div class="header__contact-container">
+					{% include '/assets/svg/icon3.svg' %}
+					<a href="https://канцпарк.рф/" class="header__email">
+						market@estatut.ru
+					</a>
+				</div>
+				<div class="header__contact-container">
+					{% include '/assets/svg/icon4.svg' %}
 
-        <div class="header__link-container">
-          {% include '/assets/svg/icon1.svg' %}
-          <a href="#" class="header__link">Доставка и оплата</a>
-        </div>
+					<a href="https://канцпарк.рф/" class="header__telefon">
+						8 (968) 660-65-50
+					</a>
+					{% include '/assets/svg/icon5.svg' %}
+				</div>
+			</div>
+		</div>
+		<div class="container header__container">
+			<div class="header__medium-box">
+				<div class="header__input-container">
+					<div class="header__catalog-mobile">
+						{% include '/assets/svg/katalog.svg' %}
+					</div>
+					<a class="header__logo">{% include '/assets/svg/logo.svg' %}</a>
+					<form class="header__form" action="">
+						<input type="text" class="header__field-form" placeholder="Что будем искать?"/>
+						<button type="submit" class="header__search-button-form">
+							{% include '/assets/svg/lupa.svg' %}Искать
+						</button>
+						<button type="submit" class="header__search-button-form header__search-button-form_mobile">
+							{% include '/assets/svg/mobile-button.svg' %}
+						</button>
+					</form>
+				</div>
+				<div class="header__menu">
+					<div class="header__menu-box">
+						{% include '/assets/svg/saved.svg' %}
+						<a class="header__box-link">Отложено</a>
+					</div>
+					<div class="header__menu-box">
+						{% include '/assets/svg/roja.svg' %}
+						<a href="#" class="header__box-link" onclick="o2.gPopup.open('_autorization')">Войти</a>
+					</div>
+					<div class="header__menu-box">
+						<p class="apsolute">
+							10
+						</p>
+						{% include '/assets/svg/korsina.svg' %}
+						<a class="header__box-link">Корзина</a>
+					</div>
+				</div>
+				<div class="header__menu-box header__menu-box_mobile">
+					<span class="apsolute_mobile">10</span>
 
-        <div class="header__link-container">
-          {% include '/assets/svg/icon2.svg' %}
-          <a href="#" class="header__link">Адрес и часы работы</a>
-        </div>
-      </div>
-      <div class="header__contaсts">
-        <div class="header__contact-container">
-          {% include '/assets/svg/icon3.svg' %}
-          <a href="https://канцпарк.рф/" class="header__email">
-            market@estatut.ru
-          </a>
-        </div>
-        <div class="header__contact-container">
-          {% include '/assets/svg/icon4.svg' %}
+					<a class="header__box-link">
+						{% include '/assets/svg/korsina.svg' %}
+					</a>
+				</div>
+			</div>
 
-          <a href="https://канцпарк.рф/" class="header__telefon">
-            8 (968) 660-65-50
-          </a>
-          {% include '/assets/svg/icon5.svg' %}
-        </div>
-      </div>
-    </div>
-    <div class="container header__container">
-      <div class="header__medium-box">
-        <div class="header__input-container">
-          <div class="header__catalog-mobile">
-            {% include '/assets/svg/katalog.svg' %}
-          </div>
-          <a class="header__logo">{% include '/assets/svg/logo.svg' %}</a>
-          <form class="header__form" action="">
-            <input type="text"
-              class="header__field-form"
-              placeholder="Что будем искать?" />
-            <button type="submit" class="header__search-button-form">
-              {% include '/assets/svg/lupa.svg' %}Искать
-            </button>
-            <button type="submit"
-              class="header__search-button-form header__search-button-form_mobile">
-              {% include '/assets/svg/mobile-button.svg' %}
-            </button>
-          </form>
-        </div>
-        <div class="header__menu">
-          <div class="header__menu-box">
-            {% include '/assets/svg/saved.svg' %}
-            <a class="header__box-link">Отложено</a>
-          </div>
-          <div class="header__menu-box">
-            {% include '/assets/svg/roja.svg' %}
-            <a class="header__box-link">Войти</a>
-          </div>
-          <div class="header__menu-box">
-            <p class="apsolute">
-              10
-            </p>
-            {% include '/assets/svg/korsina.svg' %}
-            <a class="header__box-link">Корзина</a>
-          </div>
-        </div>
-        <div class="header__menu-box header__menu-box_mobile">
-          <span class="apsolute_mobile">10</span>
+			<div class="header__catalog">
+				<div class="header__catalog-box">
+					{% include '/assets/svg/katalog.svg' %}
+					<a class="header__catalog-link header__calog-link-icon">Каталог</a>
+				</div>
 
-          <a class="header__box-link">
-            {% include '/assets/svg/korsina.svg' %}
-          </a>
-        </div>
-      </div>
+				<div class="header__catalog-box">
+					<a class="header__catalog-link">Авторы</a>
+				</div>
 
-      <div class="header__catalog">
-        <div class="header__catalog-box">
-          {% include '/assets/svg/katalog.svg' %}
-          <a class="header__catalog-link header__calog-link-icon">Каталог</a>
-        </div>
+				<div class="header__catalog-box">
+					<a class="header__catalog-link">Новинки</a>
+				</div>
 
-        <div class="header__catalog-box">
-          <a class="header__catalog-link">Авторы</a>
-        </div>
+				<div class="header__catalog-box">
+					{% include '/assets/svg/red.svg' %}
+					<a class="header__catalog-link header__catalog-link_red header__calog-link-icon">
+						Скидки
+					</a>
+				</div>
 
-        <div class="header__catalog-box">
-          <a class="header__catalog-link">Новинки</a>
-        </div>
+				<div class="header__catalog-box">
+					<a class="header__catalog-link">Партнёрам</a>
+				</div>
 
-        <div class="header__catalog-box">
-          {% include '/assets/svg/red.svg' %}
-          <a class="header__catalog-link header__catalog-link_red header__calog-link-icon">
-            Скидки
-          </a>
-        </div>
-
-        <div class="header__catalog-box">
-          <a class="header__catalog-link">Партнёрам</a>
-        </div>
-
-        <div class="header__catalog-box">
-          <a class="header__catalog-link">Мы</a>
-        </div>
-      </div>
-    </div>
-  </header>
+				<div class="header__catalog-box">
+					<a class="header__catalog-link">Мы</a>
+				</div>
+			</div>
+		</div>
+	</header>
 {% endblock %}

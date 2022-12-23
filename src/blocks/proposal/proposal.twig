@@ -3,24 +3,24 @@
 		<div class="proposal__container container">
 			<div class="proposal__slider-container">
 				<div class="proposal__slider">
-					<button class="button-prev proposal__slider-button">{% include '/assets/svg/right1.svg' %}</button>
+					<button class="button-prev proposal__slider-button" onclick="o2.slider.prevSlide()">{% include '/assets/svg/right1.svg' %}</button>
 
-					<div class="slider-wrapper">
+					<div class=" slider-wrapper">
 						<div class="slider-line">
 							<img src="img/slid.png" class=""/>
-							<img src="img/sli.png" class=""/>
 							<img src="img/slid.png" class=""/>
-							<img src="img/sli.png" class=""/>
+							<img src="img/slid.png" class=""/>
+							<img src="img/slid.png" class=""/>
 						</div>
 					</div>
 
 					<button class="button-next proposal__slider-button" onclick="o2.slider.nextSlide()">{% include '/assets/svg/oooo.svg' %}</button>
 
 					<div class="dots-wrapper">
-						<div class="dot active"></div>
-						<div class="dot"></div>
-						<div class="dot"></div>
-						<div class="dot"></div>
+						<div onclick="o2.slider.dotsFunc()" class="dot active"></div>
+						<div onclick="o2.slider.dotsFunc()" class="dot"></div>
+						<div onclick="o2.slider.dotsFunc()" class="dot"></div>
+						<div onclick="o2.slider.dotsFunc()" class="dot"></div>
 					</div>
 				</div>
 				{##}

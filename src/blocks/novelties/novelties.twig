@@ -1,157 +1,184 @@
 {% block novelties %}
-  <section class="novelties">
-    <div class="novelties__container container">
-      <div class="novelties__top-box">
-        <h2 class="novelties__title">
-          Новые поступления
-        </h2>
-        <div class="novelties__buttons">
-          <button class="novelties__left-button">
-            {% include '/assets/svg/left.svg' %}
-          </button>
-          <button class="novelties__right-button">
-            {% include '/assets/svg/right.svg' %}
-          </button>
-        </div>
-      </div>
-      <div class="novelties__cards">
-        <!-- uuuu -->
+	<section class="novelties">
+		<div class="novelties__container container">
+			<div class="novelties__top-box">
+				<h2 class="novelties__title">
+					Новые поступления
+				</h2>
+				<div
+					class="novelties__buttons _g-specialists-detail-arrows">
+					{# <button class="novelties__left-button">
+											{% include '/assets/svg/left.svg' %}
+										</button>
+										<button class="novelties__right-button">
+											{% include '/assets/svg/right.svg' %}
+										</button> #}
+					<div class="g-navigation__paginate	_g-specialists-detail-arrow"></div>
+				</div>
+			</div>
+			<div
+				class="novelties__cards _specialists-detail__slider">
+				<!-- uuuu -->
 
-        <div class="novelties__card">
-          <span class="novelties__card-status">Бестселлер</span>
-          <span class="novelties__card-stock">1+1=3</span>
+				<div class=" g-slider__item novelties__card">
+					<span class="novelties__card-status">Бестселлер</span>
+					<span class="novelties__card-stock">1+1=3</span>
 
-          <img alt="картинка"
-            class="novelties__card-img"
-            src="img/image1.png" />
-          <a class="novelties__card-link">Корпоративное право</a>
-          <p class="novelties__card-description">
-            Инвестирование: способы, риски, субъекты : монография
-          </p>
-          <p class="novelties__card-autрor">
-            Майфат А.В.
-          </p>
-          <p class="novelties__card-price">
-            4 450 ₽
-          </p>
-          <div class="novelties__card-rating">
-            {% include '/assets/svg/star.svg' %}
-            <span>4.9</span>
-          </div>
-          <div class="novelties__card-recommendations">
-            {% include '/assets/svg/like.svg' %}
-            <span>89% рекомендуют</span>
-          </div>
+					<img alt="картинка" class="novelties__card-img" src="img/image1.png"/>
+					<a class="novelties__card-link">Корпоративное право</a>
+					<p class="novelties__card-description">
+						Инвестирование: способы, риски, субъекты : монография
+					</p>
+					<p class="novelties__card-autрor">
+						Майфат А.В.
+					</p>
+					<p class="novelties__card-price">
+						4 450 ₽
+					</p>
+					<div class="novelties__card-rating">
+						{% include '/assets/svg/star.svg' %}
+						<span>4.9</span>
+					</div>
+					<div class="novelties__card-recommendations">
+						{% include '/assets/svg/like.svg' %}
+						<span>89% рекомендуют</span>
+					</div>
 
-          <button class="novelties__card-basket-button">
-            {% include '/assets/svg/basket.svg' %}В корзину
-          </button>
-          <button class="novelties__card-saved-button">
-            {% include '/assets/svg/saved.svg' %}
-          </button>
-        </div>
-        <!-- uuuu -->
-        <div class="novelties__card">
-          <span class="novelties__card-status novelties__card-status_new">
-            Новинка
-          </span>
+					<button class="novelties__card-basket-button">
+						{% include '/assets/svg/basket.svg' %}В корзину
+					</button>
+					<button class="novelties__card-saved-button">
+						{% include '/assets/svg/saved.svg' %}
+					</button>
+				</div>
+				<!-- uuuu -->
+				<div class=" g-slider__item novelties__card">
+					<span class="novelties__card-status">Бестселлер</span>
+					<span class="novelties__card-stock">1+1=3</span>
 
-          <img alt="картинка"
-            class="novelties__card-img"
-            src="img/image2.png" />
-          <a class="novelties__card-link">Договорное право</a>
-          <p class="novelties__card-description">
-            Договор коммерческой концессии (франчайзинг). Граж...
-          </p>
-          <p class="novelties__card-autрor">
-            Майфат А.В.
-          </p>
-          <p class="novelties__card-price">
-            372 ₽
-          </p>
-          <div class="novelties__card-rating">
-            {% include '/assets/svg/star.svg' %}
-            <span>4.9</span>
-          </div>
-          <div class="novelties__card-recommendations">
-            {% include '/assets/svg/like.svg' %}
-            <span>89% рекомендуют</span>
-          </div>
-          <button class="novelties__card-basket-button">
-            {% include '/assets/svg/basket.svg' %}В корзину
-          </button>
-          <button class="novelties__card-saved-button">
-            {% include '/assets/svg/saved.svg' %}
-          </button>
-        </div>
-        <!-- uuuu -->
-        <div class="novelties__card">
-          <img alt="картинка"
-            class="novelties__card-img"
-            src="img/image3.png" />
-          <a class="novelties__card-link">Корпоративное право</a>
-          <p class="novelties__card-description">
-            Инвестирование: способы, риски, субъекты : монография
-          </p>
-          <p class="novelties__card-autрor">
-            Майфат А.В.
-          </p>
-          <p class="novelties__card-price">
-            4 450 ₽<del>
-              1 284 ₽
-            </del>
-            <span>Выгода 300 ₽</span>
-          </p>
-          <div class="novelties__card-rating">
-            {% include '/assets/svg/star.svg' %}
-            <span>4.9</span>
-          </div>
-          <div class="novelties__card-recommendations">
-            {% include '/assets/svg/like.svg' %}
-            <span>89% рекомендуют</span>
-          </div>
-          <button class="novelties__card-basket-button">
-            {% include '/assets/svg/basket.svg' %}В корзину
-          </button>
-          <button class="novelties__card-saved-button">
-            {% include '/assets/svg/saved.svg' %}
-          </button>
-        </div>
-        <!-- uuuu -->
-        <div class="novelties__card">
-          <span class="novelties__card-status">Бестселлер</span>
-          <span class="novelties__card-stock">1+1=3</span>
-          <img alt="картинка"
-            class="novelties__card-img"
-            src="img/image1.png" />
-          <a class="novelties__card-link">Корпоративное право</a>
-          <p class="novelties__card-description">
-            Инвестирование: способы, риски, субъекты : монография
-          </p>
-          <p class="novelties__card-autрor">
-            Майфат А.В.
-          </p>
-          <p class="novelties__card-price">
-            4 450 ₽
-          </p>
-          <div class="novelties__card-rating">
-            {% include '/assets/svg/star.svg' %}
-            <span>4.9</span>
-          </div>
-          <div class="novelties__card-recommendations">
-            {% include '/assets/svg/like.svg' %}
-            <span>89% рекомендуют</span>
-          </div>
-          <button class="novelties__card-basket-button">
-            {% include '/assets/svg/basket.svg' %}В корзину
-          </button>
-          <button class="novelties__card-saved-button">
-            {% include '/assets/svg/saved.svg' %}
-          </button>
-        </div>
-        <!-- uuuu -->
-      </div>
-      <button class="novelties__bottom-box">Показать все книги раздела</button>
-    </div>
-  </section>
+					<img alt="картинка" class="novelties__card-img" src="img/image1.png"/>
+					<a class="novelties__card-link">Корпоративное право</a>
+					<p class="novelties__card-description">
+						Инвестирование: способы, риски, субъекты : монография
+					</p>
+					<p class="novelties__card-autрor">
+						Майфат А.В.
+					</p>
+					<p class="novelties__card-price">
+						4 450 ₽
+					</p>
+					<div class="novelties__card-rating">
+						{% include '/assets/svg/star.svg' %}
+						<span>4.9</span>
+					</div>
+					<div class="novelties__card-recommendations">
+						{% include '/assets/svg/like.svg' %}
+						<span>89% рекомендуют</span>
+					</div>
+
+					<button class="novelties__card-basket-button">
+						{% include '/assets/svg/basket.svg' %}В корзину
+					</button>
+					<button class="novelties__card-saved-button">
+						{% include '/assets/svg/saved.svg' %}
+					</button>
+				</div>
+				<!-- uuuu -->
+				<div class=" g-slider__item novelties__card">
+					<span class="novelties__card-status novelties__card-status_new">
+						Новинка
+					</span>
+
+					<img alt="картинка" class="novelties__card-img" src="img/image2.png"/>
+					<a class="novelties__card-link">Договорное право</a>
+					<p class="novelties__card-description">
+						Договор коммерческой концессии (франчайзинг). Граж...
+					</p>
+					<p class="novelties__card-autрor">
+						Майфат А.В.
+					</p>
+					<p class="novelties__card-price">
+						372 ₽
+					</p>
+					<div class="novelties__card-rating">
+						{% include '/assets/svg/star.svg' %}
+						<span>4.9</span>
+					</div>
+					<div class="novelties__card-recommendations">
+						{% include '/assets/svg/like.svg' %}
+						<span>89% рекомендуют</span>
+					</div>
+					<button class="novelties__card-basket-button">
+						{% include '/assets/svg/basket.svg' %}В корзину
+					</button>
+					<button class="novelties__card-saved-button">
+						{% include '/assets/svg/saved.svg' %}
+					</button>
+				</div>
+				<!-- uuuu -->
+				<div class="g-slider__item novelties__card">
+					<img alt="картинка" class="novelties__card-img" src="img/image3.png"/>
+					<a class="novelties__card-link">Корпоративное право</a>
+					<p class="novelties__card-description">
+						Инвестирование: способы, риски, субъекты : монография
+					</p>
+					<p class="novelties__card-autрor">
+						Майфат А.В.
+					</p>
+					<p class="novelties__card-price">
+						4 450 ₽<del>
+							1 284 ₽
+						</del>
+						<span>Выгода 300 ₽</span>
+					</p>
+					<div class="novelties__card-rating">
+						{% include '/assets/svg/star.svg' %}
+						<span>4.9</span>
+					</div>
+					<div class="novelties__card-recommendations">
+						{% include '/assets/svg/like.svg' %}
+						<span>89% рекомендуют</span>
+					</div>
+					<button class="novelties__card-basket-button">
+						{% include '/assets/svg/basket.svg' %}В корзину
+					</button>
+					<button class="novelties__card-saved-button">
+						{% include '/assets/svg/saved.svg' %}
+					</button>
+				</div>
+				<!-- uuuu -->
+				<div class="g-slider__item novelties__card">
+					<span class="novelties__card-status">Бестселлер</span>
+					<span class="novelties__card-stock">1+1=3</span>
+					<img alt="картинка" class="novelties__card-img" src="img/image1.png"/>
+					<a class="novelties__card-link">Корпоративное право</a>
+					<p class="novelties__card-description">
+						Инвестирование: способы, риски, субъекты : монография
+					</p>
+					<p class="novelties__card-autрor">
+						Майфат А.В.
+					</p>
+					<p class="novelties__card-price">
+						4 450 ₽
+					</p>
+					<div class="novelties__card-rating">
+						{% include '/assets/svg/star.svg' %}
+						<span>4.9</span>
+					</div>
+					<div class="novelties__card-recommendations">
+						{% include '/assets/svg/like.svg' %}
+						<span>89% рекомендуют</span>
+					</div>
+					<button class="novelties__card-basket-button">
+						{% include '/assets/svg/basket.svg' %}В корзину
+					</button>
+					<button class="novelties__card-saved-button">
+						{% include '/assets/svg/saved.svg' %}
+					</button>
+				</div>
+				<!-- uuuu -->
+			</div>
+			<button class="novelties__bottom-box">Показать все книги раздела</button>
+		</div>
+	</section>
 {% endblock %}

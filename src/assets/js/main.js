@@ -17,6 +17,9 @@ const o2 =
 	 */
 	init()
 	{
+		this.specialistsDetal.init();
+		this.gPopup.init();
+		this.innputMask.init();
 	},
 	/**
 	* отслеживание клика вне блока

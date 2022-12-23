@@ -1,5 +1,13 @@
 .novelties {
   background: #f9f9fa;
+  .slick-track
+  {
+    display: flex;
+  }
+
+  .slick-list{
+    overflow: hidden;
+  }
 }
 
 .novelties__container {
@@ -44,6 +52,10 @@
   border: 1px solid #1c294d26;
   border-radius: 0px 5px 5px 0px;
   border-left: 0;
+  background-image: url('/svg/right.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 23%;
 }
 
 .novelties__left-button {
@@ -51,19 +63,23 @@
   height: 30px;
   border: 1px solid #1c294d26;
   border-radius: 5px 0 0 5px;
+  background-image: url('/svg/left.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 23%;
 }
 
 .novelties__cards {
   /*display: flex;
   justify-content: center;
   flex-wrap: wrap;*/
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 285px /*minmax(270px, 400px)*/);
-  justify-content: center;
+  // display: grid;
+  // grid-template-columns: repeat(auto-fill, 285px /*minmax(270px, 400px)*/);
+  // justify-content: center;
 
-  @media screen and (max-width: 610px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  // @media screen and (max-width: 610px) {
+  //   grid-template-columns: repeat(2, 1fr);
+  // }
 }
 
 .novelties__card {
@@ -74,7 +90,7 @@
   font-size: 0;
   position: relative;
   border-right: 1px solid #1c294d26;
-  border-top: 1px solid #1c294d26;
+  //border-top: 1px solid #1c294d26;
 
   &:last-of-type {
     border-right: 0;
@@ -323,4 +339,8 @@
   line-height: 20px;
   color: #1c294d;
   border-radius: 0 0 5px 5px;
+}
+
+.g-navigation__paginate	._g-specialists-detail-arrow {
+  display: flex;
 }
